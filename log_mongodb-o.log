@@ -1,0 +1,362 @@
+Advertised Hostname: mongodb-0.mongodb-headless.default.svc.cluster.local
+Pod name matches initial primary pod name, configuring node as a primary
+[38;5;6mmongodb [38;5;5m06:51:42.77 [0m
+[38;5;6mmongodb [38;5;5m06:51:42.77 [0m[1mWelcome to the Bitnami mongodb container[0m
+[38;5;6mmongodb [38;5;5m06:51:42.77 [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-mongodb[0m
+[38;5;6mmongodb [38;5;5m06:51:42.77 [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-mongodb/issues[0m
+[38;5;6mmongodb [38;5;5m06:51:42.77 [0m
+[38;5;6mmongodb [38;5;5m06:51:42.77 [0m[38;5;2mINFO [0m ==> ** Starting MongoDB setup **
+[38;5;6mmongodb [38;5;5m06:51:42.79 [0m[38;5;2mINFO [0m ==> Validating settings in MONGODB_* env vars...
+[38;5;6mmongodb [38;5;5m06:51:42.80 [0m[38;5;2mINFO [0m ==> Initializing MongoDB...
+[38;5;6mmongodb [38;5;5m06:51:42.83 [0m[38;5;2mINFO [0m ==> Enabling authentication...
+[38;5;6mmongodb [38;5;5m06:51:42.84 [0m[38;5;2mINFO [0m ==> Deploying MongoDB with persisted data...
+[38;5;6mmongodb [38;5;5m06:51:42.84 [0m[38;5;2mINFO [0m ==> Writing keyfile for replica set authentication...
+[38;5;6mmongodb [38;5;5m06:51:42.88 [0m[38;5;2mINFO [0m ==> Loading custom scripts...
+[38;5;6mmongodb [38;5;5m06:51:42.88 [0m[38;5;2mINFO [0m ==> ** MongoDB setup finished! **
+
+[38;5;6mmongodb [38;5;5m06:51:42.91 [0m[38;5;2mINFO [0m ==> ** Starting MongoDB **
+2020-08-03T06:51:42.939+0000 I  CONTROL  [main] ***** SERVER RESTARTED *****
+2020-08-03T06:51:42.944+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-08-03T06:51:42.947+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/bitnami/mongodb/data/db 64-bit host=mongodb-0
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] db version v4.2.8
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] git version: 43d25964249164d76d5e04dd6cf38f6111e21f5f
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1d  10 Sep 2019
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] modules: none
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] build environment:
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten]     distmod: debian10
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-08-03T06:51:42.993+0000 I  CONTROL  [initandlisten] options: { config: "/opt/bitnami/mongodb/conf/mongodb.conf", net: { bindIp: "*", ipv6: false, port: 27017, unixDomainSocket: { enabled: true, pathPrefix: "/opt/bitnami/mongodb/tmp" } }, processManagement: { fork: false, pidFilePath: "/opt/bitnami/mongodb/tmp/mongodb.pid" }, replication: { enableMajorityReadConcern: true, replSetName: "rs0" }, security: { authorization: "enabled", keyFile: "/opt/bitnami/mongodb/conf/keyfile" }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "/bitnami/mongodb/data/db", directoryPerDB: false, journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, logRotate: "reopen", path: "/opt/bitnami/mongodb/logs/mongodb.log", quiet: false, verbosity: 0 } }
+2020-08-03T06:51:42.994+0000 I  STORAGE  [initandlisten] Detected data files in /bitnami/mongodb/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-08-03T06:51:42.994+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=15567M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2020-08-03T06:51:43.765+0000 I  STORAGE  [initandlisten] WiredTiger message [1596437503:765701][1:0x7f1dba522d40], txn-recover: Recovering log 5 through 6
+2020-08-03T06:51:43.828+0000 I  STORAGE  [initandlisten] WiredTiger message [1596437503:828504][1:0x7f1dba522d40], txn-recover: Recovering log 6 through 6
+2020-08-03T06:51:43.925+0000 I  STORAGE  [initandlisten] WiredTiger message [1596437503:925260][1:0x7f1dba522d40], txn-recover: Main recovery loop: starting at 5/13568 to 6/256
+2020-08-03T06:51:43.925+0000 I  STORAGE  [initandlisten] WiredTiger message [1596437503:925781][1:0x7f1dba522d40], txn-recover: Recovering log 5 through 6
+2020-08-03T06:51:43.993+0000 I  STORAGE  [initandlisten] WiredTiger message [1596437503:993717][1:0x7f1dba522d40], txn-recover: Recovering log 6 through 6
+2020-08-03T06:51:44.058+0000 I  STORAGE  [initandlisten] WiredTiger message [1596437504:58548][1:0x7f1dba522d40], txn-recover: Set global recovery timestamp: (1596435311, 1)
+2020-08-03T06:51:44.064+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(1596435311, 1)
+2020-08-03T06:51:44.070+0000 I  STORAGE  [initandlisten] Starting OplogTruncaterThread local.oplog.rs
+2020-08-03T06:51:44.070+0000 I  STORAGE  [initandlisten] The size storer reports that the oplog contains 380 records totaling to 46780 bytes
+2020-08-03T06:51:44.070+0000 I  STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2020-08-03T06:51:44.071+0000 I  STORAGE  [initandlisten] WiredTiger record store oplog processing took 0ms
+2020-08-03T06:51:44.073+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-08-03T06:51:44.080+0000 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-08-03T06:51:44.083+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-08-03T06:51:44.083+0000 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-08-03T06:51:44.083+0000 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-08-03T06:51:44.085+0000 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-08-03T06:51:44.085+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/bitnami/mongodb/data/db/diagnostic.data'
+2020-08-03T06:51:44.087+0000 I  SHARDING [initandlisten] Marking collection local.replset.minvalid as collection version: <unsharded>
+2020-08-03T06:51:44.087+0000 I  SHARDING [initandlisten] Marking collection local.replset.election as collection version: <unsharded>
+2020-08-03T06:51:44.089+0000 I  REPL     [initandlisten] Rollback ID is 1
+2020-08-03T06:51:44.091+0000 I  REPL     [initandlisten] Recovering from stable timestamp: Timestamp(1596435311, 1) (top of oplog: { ts: Timestamp(1596435311, 1), t: 8 }, appliedThrough: { ts: Timestamp(0, 0), t: -1 }, TruncateAfter: Timestamp(0, 0))
+2020-08-03T06:51:44.091+0000 I  REPL     [initandlisten] Starting recovery oplog application at the stable timestamp: Timestamp(1596435311, 1)
+2020-08-03T06:51:44.091+0000 I  REPL     [initandlisten] No oplog entries to apply for recovery. Start point is at the top of the oplog.
+2020-08-03T06:51:44.091+0000 I  SHARDING [initandlisten] Marking collection config.transactions as collection version: <unsharded>
+2020-08-03T06:51:44.091+0000 I  SHARDING [initandlisten] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-08-03T06:51:44.093+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+2020-08-03T06:51:44.093+0000 I  SHARDING [LogicalSessionCacheReap] Marking collection config.system.sessions as collection version: <unsharded>
+2020-08-03T06:51:44.093+0000 I  NETWORK  [listener] Listening on /opt/bitnami/mongodb/tmp/mongodb-27017.sock
+2020-08-03T06:51:44.093+0000 I  CONTROL  [LogicalSessionCacheReap] Failed to reap transaction table: NotYetInitialized: Replication has not yet been configured
+2020-08-03T06:51:44.094+0000 I  NETWORK  [listener] Listening on 0.0.0.0
+2020-08-03T06:51:44.094+0000 I  NETWORK  [listener] waiting for connections on port 27017
+2020-08-03T06:51:44.160+0000 I  REPL     [replexec-0] New replica set config in use: { _id: "rs0", version: 3, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "mongodb-0.mongodb-headless.default.svc.cluster.local:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 5.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mongodb-1.mongodb-headless.default.svc.cluster.local:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mongodb-2.mongodb-headless.default.svc.cluster.local:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5f279d31f8dc34d70bd9d295') } }
+2020-08-03T06:51:44.160+0000 I  REPL     [replexec-0] This node is mongodb-0.mongodb-headless.default.svc.cluster.local:27017 in the config
+2020-08-03T06:51:44.160+0000 I  REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2020-08-03T06:51:44.161+0000 I  CONNPOOL [Replication] Connecting to mongodb-2.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:51:44.161+0000 I  REPL     [replexec-0] Starting replication storage threads
+2020-08-03T06:51:44.161+0000 I  CONNPOOL [Replication] Connecting to mongodb-1.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:51:44.163+0000 I  REPL     [replexec-0] transition to RECOVERING from STARTUP2
+2020-08-03T06:51:44.164+0000 I  REPL     [replexec-0] Starting replication fetcher thread
+2020-08-03T06:51:44.164+0000 I  REPL     [replexec-0] Starting replication applier thread
+2020-08-03T06:51:44.164+0000 I  REPL     [replexec-0] Starting replication reporter thread
+2020-08-03T06:51:44.164+0000 I  REPL     [rsSync-0] Starting oplog application
+2020-08-03T06:51:44.164+0000 I  REPL     [rsBackgroundSync] waiting for 4 pings from other members before syncing
+2020-08-03T06:51:44.164+0000 I  REPL     [rsSync-0] transition to SECONDARY from RECOVERING
+2020-08-03T06:51:44.165+0000 I  REPL     [rsSync-0] Resetting sync source to empty, which was :27017
+2020-08-03T06:51:44.209+0000 I  REPL     [replexec-2] Member mongodb-2.mongodb-headless.default.svc.cluster.local:27017 is now in state SECONDARY
+2020-08-03T06:51:44.209+0000 I  REPL     [replexec-1] Member mongodb-1.mongodb-headless.default.svc.cluster.local:27017 is now in state PRIMARY
+2020-08-03T06:51:44.210+0000 I  ELECTION [replexec-1] Scheduling priority takeover at 2020-08-03T06:51:55.706+0000
+2020-08-03T06:51:44.515+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:53944 #5 (1 connection now open)
+2020-08-03T06:51:44.516+0000 I  NETWORK  [conn5] received client metadata from 127.0.0.1:53944 conn5: { driver: { name: "mongo-go-driver", version: "v1.1.1" }, os: { type: "linux", architecture: "amd64" }, platform: "go1.13.3" }
+2020-08-03T06:51:44.517+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:53946 #6 (2 connections now open)
+2020-08-03T06:51:44.517+0000 I  NETWORK  [conn6] received client metadata from 127.0.0.1:53946 conn6: { driver: { name: "mongo-go-driver", version: "v1.1.1" }, os: { type: "linux", architecture: "amd64" }, platform: "go1.13.3", application: { name: "mongodb_exporter" } }
+2020-08-03T06:51:44.517+0000 I  SHARDING [conn6] Marking collection admin.system.users as collection version: <unsharded>
+2020-08-03T06:51:44.554+0000 I  ACCESS   [conn6] Successfully authenticated as principal root on admin from client 127.0.0.1:53946
+2020-08-03T06:51:45.165+0000 I  REPL     [rsBackgroundSync] sync source candidate: mongodb-2.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:51:45.165+0000 I  CONNPOOL [RS] Connecting to mongodb-2.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:51:45.199+0000 I  REPL     [rsBackgroundSync] Changed sync source from empty to mongodb-2.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:51:45.202+0000 I  SHARDING [rsSync-0] Marking collection local.replset.oplogTruncateAfterPoint as collection version: <unsharded>
+2020-08-03T06:51:45.204+0000 I  SHARDING [repl-writer-worker-3] Marking collection admin.test as collection version: <unsharded>
+2020-08-03T06:51:45.290+0000 I  SHARDING [monitoring-keys-for-HMAC] Marking collection admin.system.keys as collection version: <unsharded>
+2020-08-03T06:51:52.518+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54182 #9 (3 connections now open)
+2020-08-03T06:51:52.518+0000 I  NETWORK  [conn9] received client metadata from 127.0.0.1:54182 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:51:52.526+0000 I  NETWORK  [conn9] end connection 127.0.0.1:54182 (2 connections now open)
+2020-08-03T06:51:55.706+0000 I  REPL     [replexec-0] Canceling priority takeover callback
+2020-08-03T06:51:55.706+0000 I  ELECTION [replexec-0] Starting an election for a priority takeover
+2020-08-03T06:51:55.706+0000 I  ELECTION [replexec-0] conducting a dry run election to see if we could be elected. current term: 9
+2020-08-03T06:51:55.706+0000 I  REPL     [replexec-0] Scheduling remote command request for vote request: RemoteCommand 31 -- target:mongodb-1.mongodb-headless.default.svc.cluster.local:27017 db:admin cmd:{ replSetRequestVotes: 1, setName: "rs0", dryRun: true, term: 9, candidateIndex: 0, configVersion: 3, lastCommittedOp: { ts: Timestamp(1596437509, 1), t: 9 } }
+2020-08-03T06:51:55.706+0000 I  REPL     [replexec-0] Scheduling remote command request for vote request: RemoteCommand 32 -- target:mongodb-2.mongodb-headless.default.svc.cluster.local:27017 db:admin cmd:{ replSetRequestVotes: 1, setName: "rs0", dryRun: true, term: 9, candidateIndex: 0, configVersion: 3, lastCommittedOp: { ts: Timestamp(1596437509, 1), t: 9 } }
+2020-08-03T06:51:55.707+0000 I  ELECTION [replexec-1] VoteRequester(term 9 dry run) received a yes vote from mongodb-1.mongodb-headless.default.svc.cluster.local:27017; response message: { term: 9, voteGranted: true, reason: "", ok: 1.0, $clusterTime: { clusterTime: Timestamp(1596437509, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1596437509, 1) }
+2020-08-03T06:51:55.707+0000 I  CONNPOOL [replexec-1] Ending connection to host mongodb-2.mongodb-headless.default.svc.cluster.local:27017 due to bad connection status: CallbackCanceled: Callback was canceled; 0 connections to that host remain open
+2020-08-03T06:51:55.707+0000 I  CONNPOOL [Replication] Connecting to mongodb-2.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:51:55.707+0000 I  ELECTION [replexec-0] dry election run succeeded, running for election in term 10
+2020-08-03T06:51:55.708+0000 I  REPL     [replexec-0] Scheduling remote command request for vote request: RemoteCommand 33 -- target:mongodb-1.mongodb-headless.default.svc.cluster.local:27017 db:admin cmd:{ replSetRequestVotes: 1, setName: "rs0", dryRun: false, term: 10, candidateIndex: 0, configVersion: 3, lastCommittedOp: { ts: Timestamp(1596437509, 1), t: 9 } }
+2020-08-03T06:51:55.708+0000 I  REPL     [replexec-0] Scheduling remote command request for vote request: RemoteCommand 34 -- target:mongodb-2.mongodb-headless.default.svc.cluster.local:27017 db:admin cmd:{ replSetRequestVotes: 1, setName: "rs0", dryRun: false, term: 10, candidateIndex: 0, configVersion: 3, lastCommittedOp: { ts: Timestamp(1596437509, 1), t: 9 } }
+2020-08-03T06:51:55.743+0000 I  ELECTION [replexec-1] VoteRequester(term 10) received a yes vote from mongodb-1.mongodb-headless.default.svc.cluster.local:27017; response message: { term: 10, voteGranted: true, reason: "", ok: 1.0, $clusterTime: { clusterTime: Timestamp(1596437509, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } }, operationTime: Timestamp(1596437509, 1) }
+2020-08-03T06:51:55.743+0000 I  ELECTION [replexec-1] election succeeded, assuming primary role in term 10
+2020-08-03T06:51:55.743+0000 I  REPL     [replexec-1] transition to PRIMARY from SECONDARY
+2020-08-03T06:51:55.743+0000 I  REPL     [replexec-1] Resetting sync source to empty, which was mongodb-2.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:51:55.744+0000 I  REPL     [replexec-1] Entering primary catch-up mode.
+2020-08-03T06:51:55.745+0000 I  REPL     [replexec-4] Member mongodb-1.mongodb-headless.default.svc.cluster.local:27017 is now in state SECONDARY
+2020-08-03T06:51:55.745+0000 I  REPL     [replexec-1] Caught up to the latest optime known via heartbeats after becoming primary. Target optime: { ts: Timestamp(1596437509, 1), t: 9 }. My Last Applied: { ts: Timestamp(1596437509, 1), t: 9 }
+2020-08-03T06:51:55.745+0000 I  REPL     [replexec-1] Exited primary catch-up mode.
+2020-08-03T06:51:55.745+0000 I  REPL     [replexec-1] Stopping replication producer
+2020-08-03T06:51:55.745+0000 I  REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2020-08-03T06:51:55.745+0000 I  CONNPOOL [RS] Ending connection to host mongodb-2.mongodb-headless.default.svc.cluster.local:27017 due to bad connection status: CallbackCanceled: Callback was canceled; 1 connections to that host remain open
+2020-08-03T06:51:55.745+0000 I  REPL     [ReplBatcher] Oplog buffer has been drained in term 10
+2020-08-03T06:51:55.746+0000 I  REPL     [RstlKillOpThread] Starting to kill user operations
+2020-08-03T06:51:55.746+0000 I  REPL     [RstlKillOpThread] Stopped killing user operations
+2020-08-03T06:51:55.746+0000 I  REPL     [RstlKillOpThread] State transition ops metrics: { lastStateTransition: "stepUp", userOpsKilled: 0, userOpsRunning: 0 }
+2020-08-03T06:51:55.747+0000 I  REPL     [rsSync-0] transition to primary complete; database writes are now permitted
+2020-08-03T06:51:56.721+0000 I  NETWORK  [listener] connection accepted from 10.5.2.2:45250 #11 (3 connections now open)
+2020-08-03T06:51:56.721+0000 I  NETWORK  [conn11] received client metadata from 10.5.2.2:45250 conn11: { driver: { name: "NetworkInterfaceTL", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:51:56.761+0000 I  ACCESS   [conn11] Successfully authenticated as principal __system on local from client 10.5.2.2:45250
+2020-08-03T06:51:57.047+0000 I  NETWORK  [listener] connection accepted from 10.5.2.2:45258 #12 (4 connections now open)
+2020-08-03T06:51:57.048+0000 I  NETWORK  [conn12] received client metadata from 10.5.2.2:45258 conn12: { driver: { name: "NetworkInterfaceTL", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:51:57.079+0000 I  ACCESS   [conn12] Successfully authenticated as principal __system on local from client 10.5.2.2:45258
+2020-08-03T06:51:57.377+0000 I  NETWORK  [listener] connection accepted from 10.5.3.2:39242 #13 (5 connections now open)
+2020-08-03T06:51:57.377+0000 I  NETWORK  [conn13] received client metadata from 10.5.3.2:39242 conn13: { driver: { name: "NetworkInterfaceTL", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:51:57.408+0000 I  ACCESS   [conn13] Successfully authenticated as principal __system on local from client 10.5.3.2:39242
+2020-08-03T06:51:57.712+0000 I  NETWORK  [listener] connection accepted from 10.5.3.2:39254 #14 (6 connections now open)
+2020-08-03T06:51:57.713+0000 I  NETWORK  [conn14] received client metadata from 10.5.3.2:39254 conn14: { driver: { name: "NetworkInterfaceTL", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:51:57.744+0000 I  ACCESS   [conn14] Successfully authenticated as principal __system on local from client 10.5.3.2:39254
+2020-08-03T06:51:57.748+0000 I  NETWORK  [listener] connection accepted from 10.5.3.2:39260 #15 (7 connections now open)
+2020-08-03T06:51:57.748+0000 I  NETWORK  [conn15] received client metadata from 10.5.3.2:39260 conn15: { driver: { name: "NetworkInterfaceTL", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:51:57.781+0000 I  ACCESS   [conn15] Successfully authenticated as principal __system on local from client 10.5.3.2:39260
+2020-08-03T06:51:59.445+0000 I  REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to mongodb-2.mongodb-headless.default.svc.cluster.local:27017: InvalidSyncSource: Sync source was cleared. Was mongodb-2.mongodb-headless.default.svc.cluster.local:27017
+2020-08-03T06:52:02.506+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54486 #16 (8 connections now open)
+2020-08-03T06:52:02.507+0000 I  NETWORK  [conn16] received client metadata from 127.0.0.1:54486 conn16: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:02.513+0000 I  NETWORK  [conn16] end connection 127.0.0.1:54486 (7 connections now open)
+2020-08-03T06:52:08.505+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54662 #17 (8 connections now open)
+2020-08-03T06:52:08.505+0000 I  NETWORK  [conn17] received client metadata from 127.0.0.1:54662 conn17: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:08.535+0000 I  ACCESS   [conn17] Successfully authenticated as principal root on admin from client 127.0.0.1:54662
+2020-08-03T06:52:08.542+0000 I  NETWORK  [conn17] end connection 127.0.0.1:54662 (7 connections now open)
+2020-08-03T06:52:12.513+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:54812 #18 (8 connections now open)
+2020-08-03T06:52:12.513+0000 I  NETWORK  [conn18] received client metadata from 127.0.0.1:54812 conn18: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:12.520+0000 I  NETWORK  [conn18] end connection 127.0.0.1:54812 (7 connections now open)
+2020-08-03T06:52:22.529+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:55104 #19 (8 connections now open)
+2020-08-03T06:52:22.529+0000 I  NETWORK  [conn19] received client metadata from 127.0.0.1:55104 conn19: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:22.536+0000 I  NETWORK  [conn19] end connection 127.0.0.1:55104 (7 connections now open)
+2020-08-03T06:52:26.998+0000 I  NETWORK  [listener] connection accepted from 10.5.2.2:46176 #20 (8 connections now open)
+2020-08-03T06:52:26.998+0000 I  NETWORK  [listener] connection accepted from 10.5.2.2:46178 #21 (9 connections now open)
+2020-08-03T06:52:26.998+0000 I  NETWORK  [conn20] received client metadata from 10.5.2.2:46176 conn20: { driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:26.998+0000 I  NETWORK  [conn21] received client metadata from 10.5.2.2:46178 conn21: { driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:27.031+0000 I  ACCESS   [conn20] Successfully authenticated as principal __system on local from client 10.5.2.2:46176
+2020-08-03T06:52:27.032+0000 I  ACCESS   [conn21] Successfully authenticated as principal __system on local from client 10.5.2.2:46178
+2020-08-03T06:52:27.066+0000 I  ACCESS   [conn21] Successfully authenticated as principal __system on local from client 10.5.2.2:46178
+2020-08-03T06:52:27.106+0000 I  ACCESS   [conn21] Successfully authenticated as principal __system on local from client 10.5.2.2:46178
+2020-08-03T06:52:27.138+0000 I  ACCESS   [conn21] Successfully authenticated as principal __system on local from client 10.5.2.2:46178
+2020-08-03T06:52:32.520+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:55388 #22 (10 connections now open)
+2020-08-03T06:52:32.520+0000 I  NETWORK  [conn22] received client metadata from 127.0.0.1:55388 conn22: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:32.528+0000 I  NETWORK  [conn22] end connection 127.0.0.1:55388 (9 connections now open)
+2020-08-03T06:52:42.518+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:55676 #23 (10 connections now open)
+2020-08-03T06:52:42.518+0000 I  NETWORK  [conn23] received client metadata from 127.0.0.1:55676 conn23: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:42.525+0000 I  NETWORK  [conn23] end connection 127.0.0.1:55676 (9 connections now open)
+2020-08-03T06:52:52.539+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:55962 #24 (10 connections now open)
+2020-08-03T06:52:52.539+0000 I  NETWORK  [conn24] received client metadata from 127.0.0.1:55962 conn24: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:52:52.547+0000 I  NETWORK  [conn24] end connection 127.0.0.1:55962 (9 connections now open)
+2020-08-03T06:53:02.511+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:56258 #25 (10 connections now open)
+2020-08-03T06:53:02.512+0000 I  NETWORK  [conn25] received client metadata from 127.0.0.1:56258 conn25: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:53:02.518+0000 I  NETWORK  [conn25] end connection 127.0.0.1:56258 (9 connections now open)
+2020-08-03T06:53:12.518+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:56548 #26 (10 connections now open)
+2020-08-03T06:53:12.519+0000 I  NETWORK  [conn26] received client metadata from 127.0.0.1:56548 conn26: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:53:12.525+0000 I  NETWORK  [conn26] end connection 127.0.0.1:56548 (9 connections now open)
+2020-08-03T06:53:22.532+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:56830 #27 (10 connections now open)
+2020-08-03T06:53:22.532+0000 I  NETWORK  [conn27] received client metadata from 127.0.0.1:56830 conn27: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:53:22.539+0000 I  NETWORK  [conn27] end connection 127.0.0.1:56830 (9 connections now open)
+2020-08-03T06:53:32.532+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57114 #28 (10 connections now open)
+2020-08-03T06:53:32.532+0000 I  NETWORK  [conn28] received client metadata from 127.0.0.1:57114 conn28: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:53:32.542+0000 I  NETWORK  [conn28] end connection 127.0.0.1:57114 (9 connections now open)
+2020-08-03T06:53:42.526+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57398 #29 (10 connections now open)
+2020-08-03T06:53:42.526+0000 I  NETWORK  [conn29] received client metadata from 127.0.0.1:57398 conn29: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:53:42.533+0000 I  NETWORK  [conn29] end connection 127.0.0.1:57398 (9 connections now open)
+2020-08-03T06:53:52.522+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57686 #30 (10 connections now open)
+2020-08-03T06:53:52.523+0000 I  NETWORK  [conn30] received client metadata from 127.0.0.1:57686 conn30: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:53:52.530+0000 I  NETWORK  [conn30] end connection 127.0.0.1:57686 (9 connections now open)
+2020-08-03T06:54:02.505+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:57976 #31 (10 connections now open)
+2020-08-03T06:54:02.506+0000 I  NETWORK  [conn31] received client metadata from 127.0.0.1:57976 conn31: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:54:02.512+0000 I  NETWORK  [conn31] end connection 127.0.0.1:57976 (9 connections now open)
+2020-08-03T06:54:12.527+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:58268 #32 (10 connections now open)
+2020-08-03T06:54:12.527+0000 I  NETWORK  [conn32] received client metadata from 127.0.0.1:58268 conn32: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:54:12.534+0000 I  NETWORK  [conn32] end connection 127.0.0.1:58268 (9 connections now open)
+2020-08-03T06:54:22.516+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:58552 #33 (10 connections now open)
+2020-08-03T06:54:22.516+0000 I  NETWORK  [conn33] received client metadata from 127.0.0.1:58552 conn33: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:54:22.523+0000 I  NETWORK  [conn33] end connection 127.0.0.1:58552 (9 connections now open)
+2020-08-03T06:54:32.512+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:58832 #34 (10 connections now open)
+2020-08-03T06:54:32.513+0000 I  NETWORK  [conn34] received client metadata from 127.0.0.1:58832 conn34: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:54:32.519+0000 I  NETWORK  [conn34] end connection 127.0.0.1:58832 (9 connections now open)
+2020-08-03T06:54:42.512+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:59120 #35 (10 connections now open)
+2020-08-03T06:54:42.513+0000 I  NETWORK  [conn35] received client metadata from 127.0.0.1:59120 conn35: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:54:42.520+0000 I  NETWORK  [conn35] end connection 127.0.0.1:59120 (9 connections now open)
+2020-08-03T06:54:52.505+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:59408 #36 (10 connections now open)
+2020-08-03T06:54:52.505+0000 I  NETWORK  [conn36] received client metadata from 127.0.0.1:59408 conn36: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:54:52.512+0000 I  NETWORK  [conn36] end connection 127.0.0.1:59408 (9 connections now open)
+2020-08-03T06:55:02.529+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:59696 #37 (10 connections now open)
+2020-08-03T06:55:02.529+0000 I  NETWORK  [conn37] received client metadata from 127.0.0.1:59696 conn37: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:55:02.535+0000 I  NETWORK  [conn37] end connection 127.0.0.1:59696 (9 connections now open)
+2020-08-03T06:55:12.519+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:59994 #38 (10 connections now open)
+2020-08-03T06:55:12.519+0000 I  NETWORK  [conn38] received client metadata from 127.0.0.1:59994 conn38: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:55:12.525+0000 I  NETWORK  [conn38] end connection 127.0.0.1:59994 (9 connections now open)
+2020-08-03T06:55:22.527+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60290 #39 (10 connections now open)
+2020-08-03T06:55:22.527+0000 I  NETWORK  [conn39] received client metadata from 127.0.0.1:60290 conn39: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:55:22.534+0000 I  NETWORK  [conn39] end connection 127.0.0.1:60290 (9 connections now open)
+2020-08-03T06:55:32.514+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60562 #40 (10 connections now open)
+2020-08-03T06:55:32.515+0000 I  NETWORK  [conn40] received client metadata from 127.0.0.1:60562 conn40: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:55:32.522+0000 I  NETWORK  [conn40] end connection 127.0.0.1:60562 (9 connections now open)
+2020-08-03T06:55:42.522+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:60850 #41 (10 connections now open)
+2020-08-03T06:55:42.522+0000 I  NETWORK  [conn41] received client metadata from 127.0.0.1:60850 conn41: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:55:42.529+0000 I  NETWORK  [conn41] end connection 127.0.0.1:60850 (9 connections now open)
+2020-08-03T06:55:52.507+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:32908 #42 (10 connections now open)
+2020-08-03T06:55:52.507+0000 I  NETWORK  [conn42] received client metadata from 127.0.0.1:32908 conn42: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:55:52.514+0000 I  NETWORK  [conn42] end connection 127.0.0.1:32908 (9 connections now open)
+2020-08-03T06:56:02.514+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:33186 #43 (10 connections now open)
+2020-08-03T06:56:02.514+0000 I  NETWORK  [conn43] received client metadata from 127.0.0.1:33186 conn43: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:02.521+0000 I  NETWORK  [conn43] end connection 127.0.0.1:33186 (9 connections now open)
+2020-08-03T06:56:12.508+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:33490 #44 (10 connections now open)
+2020-08-03T06:56:12.509+0000 I  NETWORK  [conn44] received client metadata from 127.0.0.1:33490 conn44: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:12.517+0000 I  NETWORK  [conn44] end connection 127.0.0.1:33490 (9 connections now open)
+2020-08-03T06:56:22.530+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:33792 #45 (10 connections now open)
+2020-08-03T06:56:22.530+0000 I  NETWORK  [conn45] received client metadata from 127.0.0.1:33792 conn45: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:22.537+0000 I  NETWORK  [conn45] end connection 127.0.0.1:33792 (9 connections now open)
+2020-08-03T06:56:32.518+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:34078 #46 (10 connections now open)
+2020-08-03T06:56:32.518+0000 I  NETWORK  [conn46] received client metadata from 127.0.0.1:34078 conn46: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:32.525+0000 I  NETWORK  [conn46] end connection 127.0.0.1:34078 (9 connections now open)
+2020-08-03T06:56:36.704+0000 I  NETWORK  [listener] connection accepted from 10.5.3.2:47356 #47 (10 connections now open)
+2020-08-03T06:56:36.707+0000 I  NETWORK  [conn47] received client metadata from 10.5.3.2:47356 conn47: { driver: { name: "NetworkInterfaceTL", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:36.783+0000 I  ACCESS   [conn47] Successfully authenticated as principal __system on local from client 10.5.3.2:47356
+2020-08-03T06:56:36.785+0000 I  NETWORK  [listener] connection accepted from 10.5.3.2:47362 #48 (11 connections now open)
+2020-08-03T06:56:36.785+0000 I  NETWORK  [listener] connection accepted from 10.5.3.2:47364 #49 (12 connections now open)
+2020-08-03T06:56:36.785+0000 I  NETWORK  [conn48] received client metadata from 10.5.3.2:47362 conn48: { driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:36.785+0000 I  NETWORK  [conn49] received client metadata from 10.5.3.2:47364 conn49: { driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:36.818+0000 I  ACCESS   [conn48] Successfully authenticated as principal __system on local from client 10.5.3.2:47362
+2020-08-03T06:56:36.818+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T06:56:36.852+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T06:56:36.889+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T06:56:36.924+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T06:56:42.509+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:34374 #50 (13 connections now open)
+2020-08-03T06:56:42.509+0000 I  NETWORK  [conn50] received client metadata from 127.0.0.1:34374 conn50: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:42.516+0000 I  NETWORK  [conn50] end connection 127.0.0.1:34374 (12 connections now open)
+2020-08-03T06:56:52.532+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:34676 #51 (13 connections now open)
+2020-08-03T06:56:52.533+0000 I  NETWORK  [conn51] received client metadata from 127.0.0.1:34676 conn51: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:56:52.540+0000 I  NETWORK  [conn51] end connection 127.0.0.1:34676 (12 connections now open)
+2020-08-03T06:56:55.745+0000 I  CONNPOOL [RS] Dropping all pooled connections to mongodb-2.mongodb-headless.default.svc.cluster.local:27017 due to ShutdownInProgress: Pool for mongodb-2.mongodb-headless.default.svc.cluster.local:27017 has expired.
+2020-08-03T06:57:02.520+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:34954 #52 (13 connections now open)
+2020-08-03T06:57:02.520+0000 I  NETWORK  [conn52] received client metadata from 127.0.0.1:34954 conn52: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:57:02.527+0000 I  NETWORK  [conn52] end connection 127.0.0.1:34954 (12 connections now open)
+2020-08-03T06:57:12.526+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:35250 #53 (13 connections now open)
+2020-08-03T06:57:12.526+0000 I  NETWORK  [conn53] received client metadata from 127.0.0.1:35250 conn53: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:57:12.532+0000 I  NETWORK  [conn53] end connection 127.0.0.1:35250 (12 connections now open)
+2020-08-03T06:57:22.527+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:35552 #54 (13 connections now open)
+2020-08-03T06:57:22.527+0000 I  NETWORK  [conn54] received client metadata from 127.0.0.1:35552 conn54: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:57:22.535+0000 I  NETWORK  [conn54] end connection 127.0.0.1:35552 (12 connections now open)
+2020-08-03T06:57:27.030+0000 I  ACCESS   [conn21] Successfully authenticated as principal __system on local from client 10.5.2.2:46178
+2020-08-03T06:57:27.031+0000 I  ACCESS   [conn20] Successfully authenticated as principal __system on local from client 10.5.2.2:46176
+2020-08-03T06:57:27.065+0000 I  ACCESS   [conn20] Successfully authenticated as principal __system on local from client 10.5.2.2:46176
+2020-08-03T06:57:27.104+0000 I  ACCESS   [conn20] Successfully authenticated as principal __system on local from client 10.5.2.2:46176
+2020-08-03T06:57:27.136+0000 I  ACCESS   [conn20] Successfully authenticated as principal __system on local from client 10.5.2.2:46176
+2020-08-03T06:57:32.514+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:35820 #55 (13 connections now open)
+2020-08-03T06:57:32.514+0000 I  NETWORK  [conn55] received client metadata from 127.0.0.1:35820 conn55: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:57:32.521+0000 I  NETWORK  [conn55] end connection 127.0.0.1:35820 (12 connections now open)
+2020-08-03T06:57:42.529+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:36112 #56 (13 connections now open)
+2020-08-03T06:57:42.529+0000 I  NETWORK  [conn56] received client metadata from 127.0.0.1:36112 conn56: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:57:42.537+0000 I  NETWORK  [conn56] end connection 127.0.0.1:36112 (12 connections now open)
+2020-08-03T06:57:52.546+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:36404 #57 (13 connections now open)
+2020-08-03T06:57:52.546+0000 I  NETWORK  [conn57] received client metadata from 127.0.0.1:36404 conn57: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:57:52.555+0000 I  NETWORK  [conn57] end connection 127.0.0.1:36404 (12 connections now open)
+2020-08-03T06:58:02.515+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:36682 #58 (13 connections now open)
+2020-08-03T06:58:02.515+0000 I  NETWORK  [conn58] received client metadata from 127.0.0.1:36682 conn58: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:58:02.522+0000 I  NETWORK  [conn58] end connection 127.0.0.1:36682 (12 connections now open)
+2020-08-03T06:58:12.511+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:36986 #59 (13 connections now open)
+2020-08-03T06:58:12.511+0000 I  NETWORK  [conn59] received client metadata from 127.0.0.1:36986 conn59: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:58:12.518+0000 I  NETWORK  [conn59] end connection 127.0.0.1:36986 (12 connections now open)
+2020-08-03T06:58:22.517+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:37274 #60 (13 connections now open)
+2020-08-03T06:58:22.517+0000 I  NETWORK  [conn60] received client metadata from 127.0.0.1:37274 conn60: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:58:22.525+0000 I  NETWORK  [conn60] end connection 127.0.0.1:37274 (12 connections now open)
+2020-08-03T06:58:32.515+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:37554 #61 (13 connections now open)
+2020-08-03T06:58:32.516+0000 I  NETWORK  [conn61] received client metadata from 127.0.0.1:37554 conn61: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:58:32.524+0000 I  NETWORK  [conn61] end connection 127.0.0.1:37554 (12 connections now open)
+2020-08-03T06:58:42.528+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:37840 #62 (13 connections now open)
+2020-08-03T06:58:42.529+0000 I  NETWORK  [conn62] received client metadata from 127.0.0.1:37840 conn62: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:58:42.536+0000 I  NETWORK  [conn62] end connection 127.0.0.1:37840 (12 connections now open)
+2020-08-03T06:58:52.526+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:38122 #63 (13 connections now open)
+2020-08-03T06:58:52.526+0000 I  NETWORK  [conn63] received client metadata from 127.0.0.1:38122 conn63: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:58:52.533+0000 I  NETWORK  [conn63] end connection 127.0.0.1:38122 (12 connections now open)
+2020-08-03T06:59:02.561+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:38406 #64 (13 connections now open)
+2020-08-03T06:59:02.562+0000 I  NETWORK  [conn64] received client metadata from 127.0.0.1:38406 conn64: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:59:02.568+0000 I  NETWORK  [conn64] end connection 127.0.0.1:38406 (12 connections now open)
+2020-08-03T06:59:12.526+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:38710 #65 (13 connections now open)
+2020-08-03T06:59:12.526+0000 I  NETWORK  [conn65] received client metadata from 127.0.0.1:38710 conn65: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:59:12.533+0000 I  NETWORK  [conn65] end connection 127.0.0.1:38710 (12 connections now open)
+2020-08-03T06:59:22.531+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:38990 #66 (13 connections now open)
+2020-08-03T06:59:22.531+0000 I  NETWORK  [conn66] received client metadata from 127.0.0.1:38990 conn66: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:59:22.539+0000 I  NETWORK  [conn66] end connection 127.0.0.1:38990 (12 connections now open)
+2020-08-03T06:59:32.528+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:39270 #67 (13 connections now open)
+2020-08-03T06:59:32.529+0000 I  NETWORK  [conn67] received client metadata from 127.0.0.1:39270 conn67: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:59:32.536+0000 I  NETWORK  [conn67] end connection 127.0.0.1:39270 (12 connections now open)
+2020-08-03T06:59:42.524+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:39560 #68 (13 connections now open)
+2020-08-03T06:59:42.524+0000 I  NETWORK  [conn68] received client metadata from 127.0.0.1:39560 conn68: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:59:42.531+0000 I  NETWORK  [conn68] end connection 127.0.0.1:39560 (12 connections now open)
+2020-08-03T06:59:52.515+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:39854 #69 (13 connections now open)
+2020-08-03T06:59:52.515+0000 I  NETWORK  [conn69] received client metadata from 127.0.0.1:39854 conn69: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T06:59:52.522+0000 I  NETWORK  [conn69] end connection 127.0.0.1:39854 (12 connections now open)
+2020-08-03T07:00:02.530+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:40138 #70 (13 connections now open)
+2020-08-03T07:00:02.530+0000 I  NETWORK  [conn70] received client metadata from 127.0.0.1:40138 conn70: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:00:02.537+0000 I  NETWORK  [conn70] end connection 127.0.0.1:40138 (12 connections now open)
+2020-08-03T07:00:12.522+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:40446 #71 (13 connections now open)
+2020-08-03T07:00:12.522+0000 I  NETWORK  [conn71] received client metadata from 127.0.0.1:40446 conn71: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:00:12.528+0000 I  NETWORK  [conn71] end connection 127.0.0.1:40446 (12 connections now open)
+2020-08-03T07:00:22.520+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:40744 #72 (13 connections now open)
+2020-08-03T07:00:22.520+0000 I  NETWORK  [conn72] received client metadata from 127.0.0.1:40744 conn72: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:00:22.527+0000 I  NETWORK  [conn72] end connection 127.0.0.1:40744 (12 connections now open)
+2020-08-03T07:00:32.517+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:41008 #73 (13 connections now open)
+2020-08-03T07:00:32.517+0000 I  NETWORK  [conn73] received client metadata from 127.0.0.1:41008 conn73: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:00:32.524+0000 I  NETWORK  [conn73] end connection 127.0.0.1:41008 (12 connections now open)
+2020-08-03T07:00:42.526+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:41298 #74 (13 connections now open)
+2020-08-03T07:00:42.527+0000 I  NETWORK  [conn74] received client metadata from 127.0.0.1:41298 conn74: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:00:42.533+0000 I  NETWORK  [conn74] end connection 127.0.0.1:41298 (12 connections now open)
+2020-08-03T07:00:52.528+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:41588 #75 (13 connections now open)
+2020-08-03T07:00:52.529+0000 I  NETWORK  [conn75] received client metadata from 127.0.0.1:41588 conn75: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:00:52.535+0000 I  NETWORK  [conn75] end connection 127.0.0.1:41588 (12 connections now open)
+2020-08-03T07:01:02.529+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:41870 #76 (13 connections now open)
+2020-08-03T07:01:02.529+0000 I  NETWORK  [conn76] received client metadata from 127.0.0.1:41870 conn76: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:01:02.536+0000 I  NETWORK  [conn76] end connection 127.0.0.1:41870 (12 connections now open)
+2020-08-03T07:01:12.512+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:42176 #77 (13 connections now open)
+2020-08-03T07:01:12.512+0000 I  NETWORK  [conn77] received client metadata from 127.0.0.1:42176 conn77: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:01:12.519+0000 I  NETWORK  [conn77] end connection 127.0.0.1:42176 (12 connections now open)
+2020-08-03T07:01:22.531+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:42448 #78 (13 connections now open)
+2020-08-03T07:01:22.532+0000 I  NETWORK  [conn78] received client metadata from 127.0.0.1:42448 conn78: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:01:22.538+0000 I  NETWORK  [conn78] end connection 127.0.0.1:42448 (12 connections now open)
+2020-08-03T07:01:32.528+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:42734 #79 (13 connections now open)
+2020-08-03T07:01:32.528+0000 I  NETWORK  [conn79] received client metadata from 127.0.0.1:42734 conn79: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:01:32.538+0000 I  NETWORK  [conn79] end connection 127.0.0.1:42734 (12 connections now open)
+2020-08-03T07:01:36.735+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T07:01:36.736+0000 I  ACCESS   [conn48] Successfully authenticated as principal __system on local from client 10.5.3.2:47362
+2020-08-03T07:01:36.767+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T07:01:36.803+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T07:01:36.835+0000 I  ACCESS   [conn49] Successfully authenticated as principal __system on local from client 10.5.3.2:47364
+2020-08-03T07:01:42.521+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:43026 #80 (13 connections now open)
+2020-08-03T07:01:42.521+0000 I  NETWORK  [conn80] received client metadata from 127.0.0.1:43026 conn80: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:01:42.527+0000 I  NETWORK  [conn80] end connection 127.0.0.1:43026 (12 connections now open)
+2020-08-03T07:01:52.529+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:43306 #81 (13 connections now open)
+2020-08-03T07:01:52.529+0000 I  NETWORK  [conn81] received client metadata from 127.0.0.1:43306 conn81: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:01:52.536+0000 I  NETWORK  [conn81] end connection 127.0.0.1:43306 (12 connections now open)
+2020-08-03T07:02:02.530+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:43586 #82 (13 connections now open)
+2020-08-03T07:02:02.531+0000 I  NETWORK  [conn82] received client metadata from 127.0.0.1:43586 conn82: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:02:02.538+0000 I  NETWORK  [conn82] end connection 127.0.0.1:43586 (12 connections now open)
+2020-08-03T07:02:12.532+0000 I  NETWORK  [listener] connection accepted from 127.0.0.1:43888 #83 (13 connections now open)
+2020-08-03T07:02:12.532+0000 I  NETWORK  [conn83] received client metadata from 127.0.0.1:43888 conn83: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.8" }, os: { type: "Linux", name: "PRETTY_NAME="Debian GNU/Linux 10 (buster)"", architecture: "x86_64", version: "Kernel 4.4.0-177-generic" } }
+2020-08-03T07:02:12.540+0000 I  NETWORK  [conn83] end connection 127.0.0.1:43888 (12 connections now open)
